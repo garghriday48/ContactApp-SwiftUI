@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressEntity" representedClassName="AddressEntity" syncable="YES">
+        <attribute name="addressType" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="street1" optional="YES" attributeType="String"/>
+        <attribute name="street2" optional="YES" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="String"/>
+        <relationship name="addressToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toAddress" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="ContactEntity" representedClassName=".ContactEntity" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="profilePic" optional="YES" attributeType="Binary"/>
+        <relationship name="toAddress" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AddressEntity" inverseName="addressToContact" inverseEntity="AddressEntity"/>
+        <relationship name="toDate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DateEntity" inverseName="dateToContact" inverseEntity="DateEntity"/>
+        <relationship name="toEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailEntity" inverseName="emailToContact" inverseEntity="EmailEntity"/>
+        <relationship name="toMessage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MessageEntity" inverseName="messageToContact" inverseEntity="MessageEntity"/>
+        <relationship name="toNumber" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NumberEntity" inverseName="numToContact" inverseEntity="NumberEntity"/>
+        <relationship name="toProfile" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SocialProfileEntity" inverseName="profileToContact" inverseEntity="SocialProfileEntity"/>
+        <relationship name="toUrl" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UrlEntity" inverseName="urlToContact" inverseEntity="UrlEntity"/>
+    </entity>
+    <entity name="DateEntity" representedClassName="DateEntity" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="dateType" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="dateToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toDate" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="EmailEntity" representedClassName=".EmailEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="emailType" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="emailToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toEmail" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="MessageEntity" representedClassName="MessageEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="messageType" optional="YES" attributeType="String"/>
+        <relationship name="messageToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toMessage" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="NumberEntity" representedClassName=".NumberEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="phnNum" optional="YES" attributeType="String"/>
+        <attribute name="phnNumType" optional="YES" attributeType="String"/>
+        <relationship name="numToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toNumber" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="SocialProfileEntity" representedClassName="SocialProfileEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="profile" optional="YES" attributeType="String"/>
+        <attribute name="profileType" optional="YES" attributeType="String"/>
+        <relationship name="profileToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toProfile" inverseEntity="ContactEntity"/>
+    </entity>
+    <entity name="UrlEntity" representedClassName="UrlEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="urlType" optional="YES" attributeType="String"/>
+        <relationship name="urlToContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactEntity" inverseName="toUrl" inverseEntity="ContactEntity"/>
+    </entity>
+</model>

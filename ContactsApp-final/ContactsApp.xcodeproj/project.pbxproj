@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90487E929F281E00038590F /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90487E829F281E00038590F /* NumberModel.swift */; };
+		C90487EB29F28DF90038590F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90487EA29F28DF90038590F /* Constants.swift */; };
+		C90487EE29F29FF50038590F /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C90487EC29F29FF50038590F /* CoreDataModel.xcdatamodeld */; };
+		C90487F429F2A70B0038590F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90487F329F2A70B0038590F /* CoreDataManager.swift */; };
+		C904880729F2B4250038590F /* EditContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904880629F2B4250038590F /* EditContactView.swift */; };
+		C904880929F2B6BB0038590F /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904880829F2B6BB0038590F /* PhotoPickerView.swift */; };
+		C905B6F129F7942F00C1A805 /* EmailEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6E929F7942F00C1A805 /* EmailEntity+CoreDataClass.swift */; };
+		C905B6F229F7942F00C1A805 /* EmailEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6EA29F7942F00C1A805 /* EmailEntity+CoreDataProperties.swift */; };
+		C905B6F329F7942F00C1A805 /* NumberEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6EB29F7942F00C1A805 /* NumberEntity+CoreDataClass.swift */; };
+		C905B6F429F7942F00C1A805 /* NumberEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6EC29F7942F00C1A805 /* NumberEntity+CoreDataProperties.swift */; };
+		C905B6F629F794DB00C1A805 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6F529F794DB00C1A805 /* AddressModel.swift */; };
+		C905B6FD29F7989200C1A805 /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6FB29F7989200C1A805 /* AddressEntity+CoreDataClass.swift */; };
+		C905B6FE29F7989200C1A805 /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B6FC29F7989200C1A805 /* AddressEntity+CoreDataProperties.swift */; };
+		C905B70329F79A3500C1A805 /* EditAddressCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B70229F79A3500C1A805 /* EditAddressCellView.swift */; };
+		C905B70529F7A46B00C1A805 /* DetailAddressCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B70429F7A46B00C1A805 /* DetailAddressCellView.swift */; };
+		C905B71529F7D47900C1A805 /* DateEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B71329F7D47900C1A805 /* DateEntity+CoreDataClass.swift */; };
+		C905B71629F7D47900C1A805 /* DateEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B71429F7D47900C1A805 /* DateEntity+CoreDataProperties.swift */; };
+		C905B71C29F7D4D500C1A805 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B71B29F7D4D500C1A805 /* DateModel.swift */; };
+		C905B71F29F7D8E700C1A805 /* EditDateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B71E29F7D8E700C1A805 /* EditDateCellView.swift */; };
+		C905B72429F7F34300C1A805 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B72329F7F34300C1A805 /* DatePickerView.swift */; };
+		C905B72629F7FB0300C1A805 /* DetailDateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905B72529F7FB0300C1A805 /* DetailDateCellView.swift */; };
+		C905E47D29F65270002A2CC5 /* EditEntityCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905E47C29F65270002A2CC5 /* EditEntityCellView.swift */; };
+		C905E4A329F682BC002A2CC5 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905E4A229F682BC002A2CC5 /* EmailModel.swift */; };
+		C905E4A529F686CB002A2CC5 /* DetailEmailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905E4A429F686CB002A2CC5 /* DetailEmailCellView.swift */; };
+		C907F54A29EE5A30005ABA69 /* DetailContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F54929EE5A30005ABA69 /* DetailContactView.swift */; };
+		C907F54C29EE6C3A005ABA69 /* DetailNumberCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F54B29EE6C3A005ABA69 /* DetailNumberCellView.swift */; };
+		C907F54E29EE709B005ABA69 /* TagPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F54D29EE709B005ABA69 /* TagPickerView.swift */; };
+		C909378929ED2C850026E7F9 /* ContactsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909378829ED2C850026E7F9 /* ContactsAppApp.swift */; };
+		C909378D29ED2C880026E7F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C909378C29ED2C880026E7F9 /* Assets.xcassets */; };
+		C909379029ED2C880026E7F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C909378F29ED2C880026E7F9 /* Preview Assets.xcassets */; };
+		C909379A29ED2CD00026E7F9 /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909379929ED2CD00026E7F9 /* ContactsListView.swift */; };
+		C90937A029ED2D410026E7F9 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909379F29ED2D410026E7F9 /* ContactsModel.swift */; };
+		C9CC991B29ED36440066A761 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC991A29ED36440066A761 /* EmptySearchView.swift */; };
+		C9CC991D29ED3E430066A761 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC991C29ED3E430066A761 /* AddContactView.swift */; };
+		C9CC992129ED44E60066A761 /* AddEntityCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC992029ED44E60066A761 /* AddEntityCellView.swift */; };
+		C9F5F86729F9364300C41710 /* UrlEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F85F29F9364300C41710 /* UrlEntity+CoreDataClass.swift */; };
+		C9F5F86829F9364300C41710 /* UrlEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86029F9364300C41710 /* UrlEntity+CoreDataProperties.swift */; };
+		C9F5F86929F9364300C41710 /* MessageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86129F9364300C41710 /* MessageEntity+CoreDataClass.swift */; };
+		C9F5F86A29F9364300C41710 /* MessageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86229F9364300C41710 /* MessageEntity+CoreDataProperties.swift */; };
+		C9F5F86B29F9364300C41710 /* ContactEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86329F9364300C41710 /* ContactEntity+CoreDataClass.swift */; };
+		C9F5F86C29F9364300C41710 /* ContactEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86429F9364300C41710 /* ContactEntity+CoreDataProperties.swift */; };
+		C9F5F86D29F9364300C41710 /* SocialProfileEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86529F9364300C41710 /* SocialProfileEntity+CoreDataClass.swift */; };
+		C9F5F86E29F9364300C41710 /* SocialProfileEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F86629F9364300C41710 /* SocialProfileEntity+CoreDataProperties.swift */; };
+		C9F5F87329F9369B00C41710 /* UrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87229F9369B00C41710 /* UrlModel.swift */; };
+		C9F5F87529F936A400C41710 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87429F936A400C41710 /* ProfileModel.swift */; };
+		C9F5F87729F936AC00C41710 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87629F936AC00C41710 /* MessageModel.swift */; };
+		C9F5F87929F943D500C41710 /* DetailUrlCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87829F943D500C41710 /* DetailUrlCellView.swift */; };
+		C9F5F87B29F943E500C41710 /* DetailProfileCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87A29F943E500C41710 /* DetailProfileCellView.swift */; };
+		C9F5F87D29F943F300C41710 /* DetailMessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F87C29F943F300C41710 /* DetailMessageCellView.swift */; };
+		E4E7179C29F19B7C0051CD70 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7179B29F19B7C0051CD70 /* MainViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C90487E829F281E00038590F /* NumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
+		C90487EA29F28DF90038590F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C90487ED29F29FF50038590F /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C90487F329F2A70B0038590F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C904880629F2B4250038590F /* EditContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactView.swift; sourceTree = "<group>"; };
+		C904880829F2B6BB0038590F /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		C905B6E929F7942F00C1A805 /* EmailEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmailEntity+CoreDataClass.swift"; path = "ContactsApp/CoreData/Email/EmailEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C905B6EA29F7942F00C1A805 /* EmailEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmailEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Email/EmailEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C905B6EB29F7942F00C1A805 /* NumberEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NumberEntity+CoreDataClass.swift"; path = "ContactsApp/CoreData/Number/NumberEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C905B6EC29F7942F00C1A805 /* NumberEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NumberEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Number/NumberEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C905B6F529F794DB00C1A805 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		C905B6FB29F7989200C1A805 /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C905B6FC29F7989200C1A805 /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C905B70229F79A3500C1A805 /* EditAddressCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressCellView.swift; sourceTree = "<group>"; };
+		C905B70429F7A46B00C1A805 /* DetailAddressCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAddressCellView.swift; sourceTree = "<group>"; };
+		C905B71329F7D47900C1A805 /* DateEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C905B71429F7D47900C1A805 /* DateEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C905B71B29F7D4D500C1A805 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		C905B71E29F7D8E700C1A805 /* EditDateCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDateCellView.swift; sourceTree = "<group>"; };
+		C905B72329F7F34300C1A805 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		C905B72529F7FB0300C1A805 /* DetailDateCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDateCellView.swift; sourceTree = "<group>"; };
+		C905E47C29F65270002A2CC5 /* EditEntityCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntityCellView.swift; sourceTree = "<group>"; };
+		C905E4A229F682BC002A2CC5 /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		C905E4A429F686CB002A2CC5 /* DetailEmailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEmailCellView.swift; sourceTree = "<group>"; };
+		C907F54929EE5A30005ABA69 /* DetailContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactView.swift; sourceTree = "<group>"; };
+		C907F54B29EE6C3A005ABA69 /* DetailNumberCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNumberCellView.swift; sourceTree = "<group>"; };
+		C907F54D29EE709B005ABA69 /* TagPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPickerView.swift; sourceTree = "<group>"; };
+		C909378529ED2C850026E7F9 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C909378829ED2C850026E7F9 /* ContactsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppApp.swift; sourceTree = "<group>"; };
+		C909378C29ED2C880026E7F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C909378F29ED2C880026E7F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C909379929ED2CD00026E7F9 /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		C909379F29ED2D410026E7F9 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		C9CC991A29ED36440066A761 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
+		C9CC991C29ED3E430066A761 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		C9CC992029ED44E60066A761 /* AddEntityCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntityCellView.swift; sourceTree = "<group>"; };
+		C9F5F85F29F9364300C41710 /* UrlEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UrlEntity+CoreDataClass.swift"; path = "ContactsApp/CoreData/Url/UrlEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86029F9364300C41710 /* UrlEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UrlEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Url/UrlEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86129F9364300C41710 /* MessageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MessageEntity+CoreDataClass.swift"; path = "ContactsApp/CoreData/Message/MessageEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86229F9364300C41710 /* MessageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MessageEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Message/MessageEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86329F9364300C41710 /* ContactEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86429F9364300C41710 /* ContactEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContactEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Contact/ContactEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86529F9364300C41710 /* SocialProfileEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SocialProfileEntity+CoreDataClass.swift"; path = "ContactsApp/CoreData/Profile/SocialProfileEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F86629F9364300C41710 /* SocialProfileEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SocialProfileEntity+CoreDataProperties.swift"; path = "ContactsApp/CoreData/Profile/SocialProfileEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C9F5F87229F9369B00C41710 /* UrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlModel.swift; sourceTree = "<group>"; };
+		C9F5F87429F936A400C41710 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		C9F5F87629F936AC00C41710 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		C9F5F87829F943D500C41710 /* DetailUrlCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUrlCellView.swift; sourceTree = "<group>"; };
+		C9F5F87A29F943E500C41710 /* DetailProfileCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProfileCellView.swift; sourceTree = "<group>"; };
+		C9F5F87C29F943F300C41710 /* DetailMessageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMessageCellView.swift; sourceTree = "<group>"; };
+		E4E7179B29F19B7C0051CD70 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C909378229ED2C850026E7F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90487BF29F262770038590F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F87129F9366C00C41710 /* Profile */,
+				C9F5F87029F9366600C41710 /* Message */,
+				C9F5F86F29F9366000C41710 /* Url */,
+				C905B6E129F7939900C1A805 /* Contact */,
+				C905B6E329F793C800C1A805 /* Number */,
+				C905B6E429F793D500C1A805 /* Email */,
+				C905B6E229F793A800C1A805 /* Address */,
+				C905B71229F7D32700C1A805 /* Date */,
+				C90487F329F2A70B0038590F /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C905B6E129F7939900C1A805 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F86329F9364300C41710 /* ContactEntity+CoreDataClass.swift */,
+				C9F5F86429F9364300C41710 /* ContactEntity+CoreDataProperties.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		C905B6E229F793A800C1A805 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				C905B6FB29F7989200C1A805 /* AddressEntity+CoreDataClass.swift */,
+				C905B6FC29F7989200C1A805 /* AddressEntity+CoreDataProperties.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		C905B6E329F793C800C1A805 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				C905B6EB29F7942F00C1A805 /* NumberEntity+CoreDataClass.swift */,
+				C905B6EC29F7942F00C1A805 /* NumberEntity+CoreDataProperties.swift */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		C905B6E429F793D500C1A805 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				C905B6E929F7942F00C1A805 /* EmailEntity+CoreDataClass.swift */,
+				C905B6EA29F7942F00C1A805 /* EmailEntity+CoreDataProperties.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		C905B6FF29F799F800C1A805 /* AddressCell */ = {
+			isa = PBXGroup;
+			children = (
+				C905B70229F79A3500C1A805 /* EditAddressCellView.swift */,
+			);
+			path = AddressCell;
+			sourceTree = "<group>";
+		};
+		C905B70629F7A4A000C1A805 /* DetailViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C907F54B29EE6C3A005ABA69 /* DetailNumberCellView.swift */,
+				C905E4A429F686CB002A2CC5 /* DetailEmailCellView.swift */,
+				C905B70429F7A46B00C1A805 /* DetailAddressCellView.swift */,
+				C905B72529F7FB0300C1A805 /* DetailDateCellView.swift */,
+				C9F5F87829F943D500C41710 /* DetailUrlCellView.swift */,
+				C9F5F87A29F943E500C41710 /* DetailProfileCellView.swift */,
+				C9F5F87C29F943F300C41710 /* DetailMessageCellView.swift */,
+			);
+			path = DetailViewCells;
+			sourceTree = "<group>";
+		};
+		C905B70729F7A8B700C1A805 /* EntityCell */ = {
+			isa = PBXGroup;
+			children = (
+				C905E47C29F65270002A2CC5 /* EditEntityCellView.swift */,
+				C9CC992029ED44E60066A761 /* AddEntityCellView.swift */,
+			);
+			path = EntityCell;
+			sourceTree = "<group>";
+		};
+		C905B71229F7D32700C1A805 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				C905B71329F7D47900C1A805 /* DateEntity+CoreDataClass.swift */,
+				C905B71429F7D47900C1A805 /* DateEntity+CoreDataProperties.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		C905B71D29F7D89B00C1A805 /* DateCell */ = {
+			isa = PBXGroup;
+			children = (
+				C905B71E29F7D8E700C1A805 /* EditDateCellView.swift */,
+			);
+			path = DateCell;
+			sourceTree = "<group>";
+		};
+		C905E4B429F6BB30002A2CC5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C90487EA29F28DF90038590F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C907F54829EE5A07005ABA69 /* DetailContact */ = {
+			isa = PBXGroup;
+			children = (
+				C907F54929EE5A30005ABA69 /* DetailContactView.swift */,
+			);
+			path = DetailContact;
+			sourceTree = "<group>";
+		};
+		C909377C29ED2C850026E7F9 = {
+			isa = PBXGroup;
+			children = (
+				C909378729ED2C850026E7F9 /* ContactsApp */,
+				C909378629ED2C850026E7F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C909378629ED2C850026E7F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C909378529ED2C850026E7F9 /* ContactsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C909378729ED2C850026E7F9 /* ContactsApp */ = {
+			isa = PBXGroup;
+			children = (
+				C909378829ED2C850026E7F9 /* ContactsAppApp.swift */,
+				C9F5F87E29F9531800C41710 /* BusniessLayer */,
+				C90487BF29F262770038590F /* CoreData */,
+				C9F5F88129F953C000C41710 /* PresentationLayer */,
+				C909378C29ED2C880026E7F9 /* Assets.xcassets */,
+				C90487EC29F29FF50038590F /* CoreDataModel.xcdatamodeld */,
+				C909378E29ED2C880026E7F9 /* Preview Content */,
+			);
+			path = ContactsApp;
+			sourceTree = "<group>";
+		};
+		C909378E29ED2C880026E7F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C909378F29ED2C880026E7F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C909379629ED2C960026E7F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9CC991E29ED44A50066A761 /* ContactList */,
+				C9CC991F29ED44B00066A761 /* AddEditContact */,
+				C907F54829EE5A07005ABA69 /* DetailContact */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C909379729ED2CAA0026E7F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C909379F29ED2D410026E7F9 /* ContactsModel.swift */,
+				C90487E829F281E00038590F /* NumberModel.swift */,
+				C905E4A229F682BC002A2CC5 /* EmailModel.swift */,
+				C905B6F529F794DB00C1A805 /* AddressModel.swift */,
+				C905B71B29F7D4D500C1A805 /* DateModel.swift */,
+				C9F5F87229F9369B00C41710 /* UrlModel.swift */,
+				C9F5F87429F936A400C41710 /* ProfileModel.swift */,
+				C9F5F87629F936AC00C41710 /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C909379829ED2CB50026E7F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7179B29F19B7C0051CD70 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9CC991E29ED44A50066A761 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				C909379929ED2CD00026E7F9 /* ContactsListView.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		C9CC991F29ED44B00066A761 /* AddEditContact */ = {
+			isa = PBXGroup;
+			children = (
+				C9CC991C29ED3E430066A761 /* AddContactView.swift */,
+				C904880629F2B4250038590F /* EditContactView.swift */,
+			);
+			path = AddEditContact;
+			sourceTree = "<group>";
+		};
+		C9F5F86F29F9366000C41710 /* Url */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F85F29F9364300C41710 /* UrlEntity+CoreDataClass.swift */,
+				C9F5F86029F9364300C41710 /* UrlEntity+CoreDataProperties.swift */,
+			);
+			path = Url;
+			sourceTree = "<group>";
+		};
+		C9F5F87029F9366600C41710 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F86129F9364300C41710 /* MessageEntity+CoreDataClass.swift */,
+				C9F5F86229F9364300C41710 /* MessageEntity+CoreDataProperties.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		C9F5F87129F9366C00C41710 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F86529F9364300C41710 /* SocialProfileEntity+CoreDataClass.swift */,
+				C9F5F86629F9364300C41710 /* SocialProfileEntity+CoreDataProperties.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C9F5F87E29F9531800C41710 /* BusniessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F87F29F9536000C41710 /* Utility */,
+				C909379829ED2CB50026E7F9 /* ViewModel */,
+				C909379729ED2CAA0026E7F9 /* Model */,
+			);
+			path = BusniessLayer;
+			sourceTree = "<group>";
+		};
+		C9F5F87F29F9536000C41710 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C905E4B429F6BB30002A2CC5 /* Constants */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C9F5F88129F953C000C41710 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5F88329F9545100C41710 /* ListCell */,
+				C9F5F88229F9544000C41710 /* Components */,
+				C909379629ED2C960026E7F9 /* Views */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		C9F5F88229F9544000C41710 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9CC991A29ED36440066A761 /* EmptySearchView.swift */,
+				C907F54D29EE709B005ABA69 /* TagPickerView.swift */,
+				C905B72329F7F34300C1A805 /* DatePickerView.swift */,
+				C904880829F2B6BB0038590F /* PhotoPickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C9F5F88329F9545100C41710 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				C905B70629F7A4A000C1A805 /* DetailViewCells */,
+				C905B70729F7A8B700C1A805 /* EntityCell */,
+				C905B71D29F7D89B00C1A805 /* DateCell */,
+				C905B6FF29F799F800C1A805 /* AddressCell */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C909378429ED2C850026E7F9 /* ContactsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C909379329ED2C880026E7F9 /* Build configuration list for PBXNativeTarget "ContactsApp" */;
+			buildPhases = (
+				C909378129ED2C850026E7F9 /* Sources */,
+				C909378229ED2C850026E7F9 /* Frameworks */,
+				C909378329ED2C850026E7F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactsApp;
+			productName = ContactsApp;
+			productReference = C909378529ED2C850026E7F9 /* ContactsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C909377D29ED2C850026E7F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C909378429ED2C850026E7F9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C909378029ED2C850026E7F9 /* Build configuration list for PBXProject "ContactsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C909377C29ED2C850026E7F9;
+			productRefGroup = C909378629ED2C850026E7F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C909378429ED2C850026E7F9 /* ContactsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C909378329ED2C850026E7F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C909379029ED2C880026E7F9 /* Preview Assets.xcassets in Resources */,
+				C909378D29ED2C880026E7F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C909378129ED2C850026E7F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C905E47D29F65270002A2CC5 /* EditEntityCellView.swift in Sources */,
+				C905B70529F7A46B00C1A805 /* DetailAddressCellView.swift in Sources */,
+				C9F5F86929F9364300C41710 /* MessageEntity+CoreDataClass.swift in Sources */,
+				C9F5F87B29F943E500C41710 /* DetailProfileCellView.swift in Sources */,
+				C905B6F429F7942F00C1A805 /* NumberEntity+CoreDataProperties.swift in Sources */,
+				C905B6F229F7942F00C1A805 /* EmailEntity+CoreDataProperties.swift in Sources */,
+				C905B71C29F7D4D500C1A805 /* DateModel.swift in Sources */,
+				C9F5F86B29F9364300C41710 /* ContactEntity+CoreDataClass.swift in Sources */,
+				C9CC991B29ED36440066A761 /* EmptySearchView.swift in Sources */,
+				C905B72429F7F34300C1A805 /* DatePickerView.swift in Sources */,
+				C90487E929F281E00038590F /* NumberModel.swift in Sources */,
+				C9F5F87329F9369B00C41710 /* UrlModel.swift in Sources */,
+				C905B71529F7D47900C1A805 /* DateEntity+CoreDataClass.swift in Sources */,
+				C905B72629F7FB0300C1A805 /* DetailDateCellView.swift in Sources */,
+				C90937A029ED2D410026E7F9 /* ContactsModel.swift in Sources */,
+				C907F54A29EE5A30005ABA69 /* DetailContactView.swift in Sources */,
+				E4E7179C29F19B7C0051CD70 /* MainViewModel.swift in Sources */,
+				C905B6FE29F7989200C1A805 /* AddressEntity+CoreDataProperties.swift in Sources */,
+				C9F5F87929F943D500C41710 /* DetailUrlCellView.swift in Sources */,
+				C9F5F87729F936AC00C41710 /* MessageModel.swift in Sources */,
+				C9F5F87529F936A400C41710 /* ProfileModel.swift in Sources */,
+				C905B71629F7D47900C1A805 /* DateEntity+CoreDataProperties.swift in Sources */,
+				C909379A29ED2CD00026E7F9 /* ContactsListView.swift in Sources */,
+				C9F5F87D29F943F300C41710 /* DetailMessageCellView.swift in Sources */,
+				C9F5F86D29F9364300C41710 /* SocialProfileEntity+CoreDataClass.swift in Sources */,
+				C905E4A329F682BC002A2CC5 /* EmailModel.swift in Sources */,
+				C905B6F329F7942F00C1A805 /* NumberEntity+CoreDataClass.swift in Sources */,
+				C905B6FD29F7989200C1A805 /* AddressEntity+CoreDataClass.swift in Sources */,
+				C9F5F86C29F9364300C41710 /* ContactEntity+CoreDataProperties.swift in Sources */,
+				C905B6F629F794DB00C1A805 /* AddressModel.swift in Sources */,
+				C9F5F86829F9364300C41710 /* UrlEntity+CoreDataProperties.swift in Sources */,
+				C9F5F86E29F9364300C41710 /* SocialProfileEntity+CoreDataProperties.swift in Sources */,
+				C905B70329F79A3500C1A805 /* EditAddressCellView.swift in Sources */,
+				C90487EB29F28DF90038590F /* Constants.swift in Sources */,
+				C9CC991D29ED3E430066A761 /* AddContactView.swift in Sources */,
+				C904880929F2B6BB0038590F /* PhotoPickerView.swift in Sources */,
+				C907F54C29EE6C3A005ABA69 /* DetailNumberCellView.swift in Sources */,
+				C909378929ED2C850026E7F9 /* ContactsAppApp.swift in Sources */,
+				C905B71F29F7D8E700C1A805 /* EditDateCellView.swift in Sources */,
+				C9F5F86729F9364300C41710 /* UrlEntity+CoreDataClass.swift in Sources */,
+				C905E4A529F686CB002A2CC5 /* DetailEmailCellView.swift in Sources */,
+				C90487EE29F29FF50038590F /* CoreDataModel.xcdatamodeld in Sources */,
+				C9CC992129ED44E60066A761 /* AddEntityCellView.swift in Sources */,
+				C904880729F2B4250038590F /* EditContactView.swift in Sources */,
+				C905B6F129F7942F00C1A805 /* EmailEntity+CoreDataClass.swift in Sources */,
+				C90487F429F2A70B0038590F /* CoreDataManager.swift in Sources */,
+				C9F5F86A29F9364300C41710 /* MessageEntity+CoreDataProperties.swift in Sources */,
+				C907F54E29EE709B005ABA69 /* TagPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C909379129ED2C880026E7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C909379229ED2C880026E7F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C909379429ED2C880026E7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContactsApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hriday.ContactsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C909379529ED2C880026E7F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContactsApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hriday.ContactsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C909378029ED2C850026E7F9 /* Build configuration list for PBXProject "ContactsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C909379129ED2C880026E7F9 /* Debug */,
+				C909379229ED2C880026E7F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C909379329ED2C880026E7F9 /* Build configuration list for PBXNativeTarget "ContactsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C909379429ED2C880026E7F9 /* Debug */,
+				C909379529ED2C880026E7F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C90487EC29F29FF50038590F /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C90487ED29F29FF50038590F /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = C90487ED29F29FF50038590F /* CoreDataModel.xcdatamodel */;
+			name = CoreDataModel.xcdatamodeld;
+			path = ../CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C909377D29ED2C850026E7F9 /* Project object */;
+}
